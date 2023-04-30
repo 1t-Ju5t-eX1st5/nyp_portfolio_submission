@@ -1,0 +1,31 @@
+#terminal {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    height: 400px;
+    overflow: auto;
+    padding: 10px;
+  }
+  
+  #output {
+    margin: 0;
+  }
+  
+  #input-container {
+    display: flex;
+  }
+  
+  #input-container span {
+    color: green;
+    margin-right: 5px;
+  }
+  
+  #input {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    flex-grow: 1;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+  }
