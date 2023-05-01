@@ -1,20 +1,30 @@
 // Define a function to handle user input
 function handleInput(input) {
+  // Define variables and constants
+  const help_message = `
+  Available commands:
+  - ls: lists all files in current directory
+  - cat [filename]: read the provided file 
+  `;
+  let currentTime = new Date();
+  let hash = btoa(currentTime.toString()).substr(0, 10);
+  const flag = `YBN{h3h3_Y0u_f0und_m3_${hash}}`;
+
   // Remove any leading/trailing whitespace from the input
   input = input.trim();
+  let cmd_output = `$> ${input}: `;
 
   // Split the input into a command and its arguments
   const parts = input.split(' ');
   const command = parts[0];
   const args = parts.slice(1);
-  let currentTime = new Date();
-  let hash = btoa(currentTime.toString()).substr(0, 10);
-  const flag = `YBN{h3h3_Y0u_f0und_m3_${hash}}`;
-  
-  let cmd_output = `$> ${input}: `;
+
 
   // Check the command and execute the appropriate action
   switch (command) {
+    case 'man':
+      cmd_output += help_message;
+      break;
     case 'ls':
       if (args.length == 0){
         // Display a list of projects
@@ -76,4 +86,4 @@ inputEl.addEventListener('keydown', function(e) {
     handleInput(input);
     e.target.value = '';
   }
-});  
+});
