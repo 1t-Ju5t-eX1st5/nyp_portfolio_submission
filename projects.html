@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-</head>
-<body>
-    <div id="terminal">
-        <pre id="output"></pre>
-        <div id="input-container">
-          <span>$</span>
-          <input id="input" type="text" autofocus>
-        </div>
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="stylesheets/index.css">
+{% endblock %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div id="terminal">
+    <pre id="output"></pre>
+    <div id="input-container">
+      <span>$</span>
+      <input id="input" type="text" autofocus>
     </div>
-    <script src="src/index.js"></script>
-</body>
-</html>
+</div>
+<script src="src/index.js"></script>
+{% endblock %}
