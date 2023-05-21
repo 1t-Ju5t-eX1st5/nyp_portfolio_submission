@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll('.section');
 const sectionButtons = document.querySelectorAll('.controls');
 const sectionButton = document.querySelectorAll('.control');
-const mainContent = document.querySelector('.main-content');
+const allSections = document.querySelector('.main-content');
 
 function pageTransition () {
     // Changes the active class when a button is clicked
@@ -12,6 +12,26 @@ function pageTransition () {
             this.className += ' active-btn';
         })
     }
+
+    // Change active section class
+    allSections.addEventListener('click', (e) => {
+        const id = e.target.dataset.id;
+        if (id) {
+            // Remove selected from the other buttons
+            sectionButtons.forEach((btn) => {
+                btn.classList.remove('active');
+            })
+            e.target.classList.add('active');
+
+            // Hide the other sections
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            })
+            
+            const element = document.getElementById(id);
+            element.classList.add('active');
+        }
+    })
 }
 
 pageTransition();

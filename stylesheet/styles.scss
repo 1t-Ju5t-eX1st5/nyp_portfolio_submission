@@ -62,29 +62,42 @@ section {
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgba(161, 228, 38, 0.934);
 
 }
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: slateblue;
     
 }
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
-    
+    background-color: rgba(179, 126, 50, 0.934);
 }
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
-    
+    background-color: rgba(222, 17, 106, 0.934);
 }
 .sec5 {
     display: none;
     transform: translateY(0) scale(1);
-    
+    background-color: rgba(25, 177, 223, 0.934);
 }
-
+.active {
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-100%) scaleY(0);
+        }
+        100% {
+            transform: translateY(0) scaleY(1);
+        }
+    }
+}
 
 // Controls
 .controls {
