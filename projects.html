@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="stylesheets/index.css">
+{% endblock %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div id="terminal">
+    <pre id="output"></pre>
+    <div id="input-container">
+      <span>$</span>
+      <input id="input" type="text" autofocus>
+    </div>
+</div>
+<script src="src/index.js"></script>
+{% endblock %}
