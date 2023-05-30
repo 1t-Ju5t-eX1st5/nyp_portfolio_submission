@@ -14,18 +14,21 @@
           my Portfolio website
         </div>
         <ul class="sidebar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><button id="testButton">Test Button</button></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="#" onclick="redirectTo('index.html')">Home</a></li>
+          <li><a href="#" onclick="redirectTo('about.html')">Projects</a></li>
+          <li><a href="#">About Me</a></li>
         </ul>
-      </div>
+    </div>
     <div style="margin-left: 200px;">
         <!-- Rest of your website content -->
         <h1>Welcome to My Website</h1>
         <p>This is the main content area of the website.</p>
     </div>
 
-    <script src="src/index.js"></script>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
