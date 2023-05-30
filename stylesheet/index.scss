@@ -1,0 +1,36 @@
+/* CSS for the sidebar menu */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.sidebar-header {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;  
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px;
+}
+
+.sidebar-nav li:hover {
+  background-color: #333;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: white;
+}
