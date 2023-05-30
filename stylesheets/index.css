@@ -1,0 +1,48 @@
+/* General CSS formats */
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Links CSS */
+a {
+  text-decoration: none !important;
+  color: #999;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #0dcaf0 !important;
+}
+
+/* Navbar CSS */
+.navbar {
+  position: relative;
+}
+
+.navbar ul li {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.navbar ul li a {
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #999;
+}/*# sourceMappingURL=index.css.map */
