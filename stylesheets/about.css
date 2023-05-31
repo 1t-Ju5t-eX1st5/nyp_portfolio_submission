@@ -1,0 +1,25 @@
+/* About CSS */
+.about-section {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-section .about-title {
+  position: relative;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.about-section .about-desc {
+  position: relative;
+  font-size: 22px;
+  font-weight: 250;
+}/*# sourceMappingURL=about.css.map */
