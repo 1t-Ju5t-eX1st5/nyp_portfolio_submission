@@ -13,6 +13,10 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Links CSS */
 a {
   text-decoration: none !important;
@@ -29,9 +33,18 @@ a:hover {
   position: relative;
 }
 
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-light .navbar-toggler:focus {
+  color: #000;
+  box-shadow: 0 0 0 2px;
+}
+
 .navbar ul li {
   position: relative;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
@@ -45,4 +58,64 @@ a:hover {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: #999;
+}
+
+/* Banner CSS */
+.banner-section {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.banner-section .banner-title {
+  position: relative;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.banner-section .banner-desc {
+  position: relative;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.banner-section .banner-btn {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a5a7a7;
+}
+
+/* Footer CSS */
+.footer {
+  position: relative;
+  padding-top: 5 0px;
+  background: #f7f7f7;
+}
+
+.footer .social-media .footer-list {
+  position: relative;
+  margin: 0 0 20px 0;
+  display: inline-block;
+}
+
+.footer .social-media .footer-list li {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer .social-media .footer-list li a {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */
