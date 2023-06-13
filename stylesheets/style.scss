@@ -47,8 +47,8 @@ a:hover {
 
 .navbar ul li {
     position: relative;
-    margin-left: .5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .navbar ul li a {
@@ -71,6 +71,10 @@ a:hover {
     padding-bottom: 3rem;
 }
 
+.banner-section .hidden-flag {
+    color: #2c2b2b;
+}
+
 .banner-section .banner-title {
     position: relative;
     margin: 0;
@@ -80,7 +84,7 @@ a:hover {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #000;
+    color: #f8f8f8;
 }
 
 .banner-section .banner-desc {
@@ -102,7 +106,7 @@ a:hover {
 .footer {
     position: relative;
     padding-top: 5 0px;
-    background: #f7f7f7;
+    background: #fafafaac;
 }
 
 .footer .social-media .footer-list {

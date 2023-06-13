@@ -14,11 +14,11 @@
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #000;
+  color: rgba(225, 218, 218, 0.8941176471);
 }
 
 .about-section .about-desc {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 250;
 }/*# sourceMappingURL=about.css.map */
