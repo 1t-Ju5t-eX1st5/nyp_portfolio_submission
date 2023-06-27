@@ -1,11 +1,26 @@
 from jinja2 import Environment, PackageLoader, select_autoescape
-def build():
-    env = Environment(
-        loader=PackageLoader('build'),
-        autoescape=select_autoescape())
-    index = env.get_template("base.html")
-    with open('index.html', 'w') as f:
-        f.write(index.render())
+from jinja2 import exceptions
 
-if __name__ == '__main__':
-    build()
+def build(files: list):
+    env = Environment(
+        loader=PackageLoader("build"),
+        autoescape=select_autoescape()
+    )
+    err_files = []
+    for file in files:
+        try:
+            template = env.get_template(file)
+            with open(file, "w") as f:
+                f.write(template.render())
+        except exceptions.TemplateNotFound as TemplateNotFound:
+            print(f"Error: HTML file \'{file}\' not found. Continuing to render other files...")
+            err_files.append(file)
+            continue
+    if len(err_files) <= 0:
+        print("All files rendered successfully!")
+    else:
+        print(f"The following files were not found/were not able to be rendered: {err_files}")
+
+if __name__ == "__main__":
+    files = ['index.html', 'non-existent.html']
+    build(files)
