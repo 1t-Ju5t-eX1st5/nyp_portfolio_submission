@@ -1,58 +1,62 @@
 {% extends 'base.html' %}
+{% block header %}
+<link rel="stylesheet" href="stylesheets/about.css">
+{% endblock %}
+
 {% block content %}
 <!-- About Content -->
-<div class="about-section">
-    <!-- My Story -->
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-8">
-                <img src="images/portfolio/events/aycep-2021.jpg" alt="">
+        <div class="about-section">
+            <!-- My Story -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-8">
+                        <img src="images/portfolio/events/aycep-2021.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="about-title">
+                            My Story
+                        </h1>
+                        <p class="about-desc">
+                            I first learnt to code in Primary 3, when my Co-curricular Activity (CCA) teacher taught us
+                            how to use Scratch to develop a simple game. After that session, I developed an interest for
+                            computer science and programming, and wanted to keep improving my ability to code in order to 
+                            develop better programs to help others.
+                        </p>
+                        <p class="about-desc">
+                            In Secondary 1, I stumbled across the Youth Cyber Exploration Programme (YCEP) that the Cyber Security Agency
+                            of Singapore (CSA) hosts annually. Although I did not win anything from YCEP 2021, it gave me a taste of what
+                            hacking was like, as well as the joy and excitement that arises from participating in CTF challenges
+                        </p>
+                        </p>
+                        <br><sub>&larr; Here you can see me featured on the Straits Times news article covering the A.YCEP competition
+                        that I took part in the subsequent year! <a href="https://www.straitstimes.com/singapore/community/180-students-attend-boot-camp-to-get-young-people-interested-in-cyber-security-as-career" target="_blank" class="banner-btn">Source</a>
+                        </sub>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <h1 class="about-title">
-                    My Story
-                </h1>
-                <p class="about-desc">
-                    I first learnt to code in Primary 3, when my Co-curricular Activity (CCA) teacher taught us
-                    how to use Scratch to develop a simple game. After that session, I developed an interest for
-                    computer science and programming, and wanted to keep improving my ability to code in order to 
-                    develop better programs to help others.
-                </p>
-                <p class="about-desc">
-                    In Secondary 1, I stumbled across the Youth Cyber Exploration Programme (YCEP) that the Cyber Security Agency
-                    of Singapore (CSA) hosts annually. Although I did not win anything from YCEP 2021, it gave me a taste of what
-                    hacking was like, as well as the joy and excitement that arises from participating in CTF challenges
-                </p>
-                </p>
-                <br><sub>&larr; Here you can see me featured on the Straits Times news article covering the A.YCEP competition
-                  that I took part in the subsequent year! <a href="https://www.straitstimes.com/singapore/community/180-students-attend-boot-camp-to-get-young-people-interested-in-cyber-security-as-career" target="_blank" class="banner-btn">Source</a>
-                </sub>
+            <!-- My Story, part 2 -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <h1 class="about-title">
+                            My Accomplishments and Projects
+                        </h1>
+                        <p class="about-desc">
+                            - First place for Team CTF - Advanced Youth Cyber Exploration Programme (2021)<br>
+                            - Second runner-up - Youth Cyber Exploration Programme, Hack'n'Flag (2022)<br>
+                            - Participant - HacktheBox's Cyber Apocalypse 2023
+                        </p>
+                        <p class="about-desc">
+                            My first coding project was a Discord bot (<a href="https://github.com/IronForce-Auscent/Le-Shroom-Boi" target="_blank">Le Shroom Boi</a>), which initially started as an
+                            inside joke between a group of friends. However, the project was eventually abandoned due to the increasing amount of schoolwork. Afterwards, I started 
+                            experimenting with other publically available APIs, and created a simple <a href="https://github.com/1t-Ju5t-eX1st5/esi_sso_projects" target="_blank">program</a> to interact
+                            with the EVE Online API
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-2 col-md-8">
+                        <img src="images/reee.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- My Story, part 2 -->
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 order-2 order-lg-1">
-                <h1 class="about-title">
-                    My Accomplishments and Projects
-                </h1>
-                <p class="about-desc">
-                    - First place for Team CTF - Advanced Youth Cyber Exploration Programme (2021)<br>
-                    - Second runner-up - Youth Cyber Exploration Programme, Hack'n'Flag (2022)<br>
-                    - Participant - HacktheBox's Cyber Apocalypse 2023
-                </p>
-                <p class="about-desc">
-                    My first coding project was a Discord bot (<a href="https://github.com/IronForce-Auscent/Le-Shroom-Boi" target="_blank">Le Shroom Boi</a>), which initially started as an
-                    inside joke between a group of friends. However, the project was eventually abandoned due to the increasing amount of schoolwork. Afterwards, I started 
-                    experimenting with other publically available APIs, and created a simple <a href="https://github.com/1t-Ju5t-eX1st5/esi_sso_projects" target="_blank">program</a> to interact
-                    with the EVE Online API
-                </p>
-            </div>
-            <div class="col-lg-6 order-2 order-lg-2 col-md-8">
-                <img src="images/reee.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}
