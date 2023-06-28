@@ -1,0 +1,125 @@
+/* General CSS formats */
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Links CSS */
+a {
+  text-decoration: none !important;
+  color: #999;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #0dcaf0 !important;
+}
+
+/* Navbar CSS */
+.navbar {
+  position: relative;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-light .navbar-toggler:focus {
+  color: #000;
+  box-shadow: 0 0 0 2px;
+}
+
+.navbar ul li {
+  position: relative;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.navbar ul li a {
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* Banner CSS */
+.banner-section {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.banner-section .hidden-flag {
+  color: #2c2b2b;
+}
+
+.banner-section .banner-title {
+  position: relative;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f8f8f8;
+}
+
+.banner-section .banner-desc {
+  position: relative;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.banner-section .banner-btn {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a5a7a7;
+}
+
+/* Footer CSS */
+.footer {
+  position: relative;
+  padding-top: 5 0px;
+  background: rgba(250, 250, 250, 0.6745098039);
+}
+
+.footer .social-media .footer-list {
+  position: relative;
+  margin: 0 0 20px 0;
+  display: inline-block;
+}
+
+.footer .social-media .footer-list li {
+  float: left;
+  margin-right: 10px;
+}
+
+.footer .social-media .footer-list li a {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
