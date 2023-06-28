@@ -4,7 +4,7 @@ import os
 
 def build(files: list):
     env = Environment(
-        loader=PackageLoader("/../templates"),
+        loader=PackageLoader("build"),
         autoescape=select_autoescape()
     )
     err_files = []
