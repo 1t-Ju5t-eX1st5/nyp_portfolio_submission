@@ -1,5 +1,6 @@
 from jinja2 import Environment, PackageLoader, select_autoescape
 from jinja2 import exceptions
+import os
 
 def build(files: list):
     env = Environment(
@@ -20,6 +21,7 @@ def build(files: list):
         print("All files rendered successfully!")
     else:
         print(f"The following files were not found/were not able to be rendered: {err_files}")
+
 
 if __name__ == "__main__":
     files = ['about.html', 'index.html', 'portfolio_website.html', 'portfolio.html']
