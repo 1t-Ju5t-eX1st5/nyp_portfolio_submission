@@ -21,3 +21,5 @@ jobs:
           - uses: stefanzweifel/git-auto-commit-action@v4
             with:
                 file_pattern: '*.html'
+          - name: Deploy
+            uses: JamesIves/github-pages-deploy-action@v4
