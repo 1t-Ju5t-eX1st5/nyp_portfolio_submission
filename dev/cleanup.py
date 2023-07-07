@@ -13,5 +13,5 @@ def cleanup(files):
     print("Cleanup complete")
 
 if __name__ == "__main__":
-    files = ['about.html', 'index.html', 'portfolio.html', 'portfolio_website.html']
+    files = ['about.html', 'index.html', 'python-website.html', 'projects.html', 'events.html', 'discord-bot.html']
     cleanup(files)
