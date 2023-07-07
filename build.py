@@ -24,5 +24,5 @@ def build(files: list):
 
 
 if __name__ == "__main__":
-    files = ['about.html', 'index.html', 'portfolio_website.html', 'portfolio.html']
+    files = ['about.html', 'index.html', 'portfolio_website.html', 'portfolio.html', 'participation.html']
     build(files)
