@@ -1,1 +1,15 @@
 Yes But No :)
+
+TODO
+Home Page
+- "although these do get pushed back often due to various school-related reasons" ->remove, this line gives ppl impression that u are not  "punctual" in principle and cannot "deliver work on time" - IMPLEMENTED
+- (optional) if you have time to spare, why not provide more pics on the home page instead of just 1. You can do a automated slideshow kind, where the pics change every x seconds, or a arrow/slider for user to click next and see more pics. - IN PROGRESS
+- the Fun fact shud go smaller font, and maybe put it like below the pic(s), instead of putting it below the "READ MORE". you put like that, users wont know that actually the "READ MORE" is a hyperlink. - IMPLEMENTED
+- "READ MORE" make it bigger font, and bold it so ppl can differentiate and know this is clickable (link) - IMPLEMENTED
+- (optional) if possible, make the github and insta icons bigger, else the white line very big, but the icons v small, looks out of place - IMPLEMENTED
+- You can copy other personal blogs/ sites and see how they do a more professional "footer" on their websites, Things like "Terms of Use, Privacy Policy, Trademark etc." Some things like Terms of Use and Privacy Policy can copy de, cuz the terms are usually very similar. I also encourage you to have a LinkedIn Account, more professional. - DELAYED
+
+ABOUT ME
+- "My Story" - dun use the word "stumbled across the ..." not professional, just go with more neutral terms like "I participated in..." - IMPLEMENTED
+- "My Story" - no need ot mention "did not win anything", just say smth like "the competition gave me a whole new experience of cybersecurity...." can use chatGPT for help to make your english sounds good - IMPLEMENTED
+- "My Accomplishements and Project" - I dont think there's a need for this because you already have another subpage for events you participated in. I suggest you can change this title to "My path to Development and Cybersecurity", then you continue your story with mini sub-headers like "first coding project", "first CTF achievement", "first etc.." then 1 paragraph for each of these sub-header - IN PROGRESS
