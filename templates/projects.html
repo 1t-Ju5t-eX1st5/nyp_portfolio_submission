@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block header %}
+<link rel="stylesheet" href="stylesheets/portfolio.css">
+{% endblock %}
+
+{% block content %}
+<!-- Portfolio Content -->
+<div class="portfolio-section">
+    <!-- Shroom Boi -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center pb-5">
+        <div class="col-lg-6">
+          <img src="images/portfolio/projects/shroom_boi/dev_demo.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="port-title">Le Shroom Boi - Discord bot</h1>
+          <p class="port-role">Developer</p>
+          <p class="port-desc">Le Shroom Boi was my first ever coding project, and it taught me the basics of using
+            online services such as APIs, Github as well as learning how to Google when I encounter issues that were
+            too complex for me to handle. Through this project, I learnt the basics of the Python programming language, 
+            which gave me a competitive edge in my school's Computing classes. 
+            <br>
+            More details about this project can be viewed 
+            <a href="#" class="banner-btn">here! &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Website -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center pb-5">
+        <div class="col-lg-6">
+          <h1 class="port-title">Simple Website</h1>
+          <p class="port-role">Full-Stack Developer</p> <!-- Can you even call it that...? -->
+          <p class="port-desc">
+            I started the development of this website during the December school holiday in 2022 as I was looking to try something new. After having a chat with my
+            friends, I ended up deciding on a website that could encrypt and decrypt text using a simple Vigenere cipher. Since it was my first time developing a website,
+            I ended up following an online tutorial, which went through the basics of Flask and how to develop a simple website in Python. 
+            <br>
+            More details about this project can be viewed
+            <a href="#" class="banner-btn">here! &rarr;</a>
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div id="proj-images" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/portfolio/projects/simple-website/account.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/portfolio/projects/simple-website/cipher.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/portfolio/projects/simple-website/notes.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#proj-images" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#proj-images" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
