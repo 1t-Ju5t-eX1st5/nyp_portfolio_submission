@@ -24,9 +24,5 @@ def build(files: list):
 
 
 if __name__ == "__main__":
-<<<<<<< Updated upstream
-    files = ['about.html', 'index.html', 'portfolio_website.html', 'portfolio.html']
-=======
     files = ['about.html', 'index.html', 'python-website.html', 'projects.html', 'events.html', 'discord-bot.html']
->>>>>>> Stashed changes
     build(files)
