@@ -2,7 +2,7 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 from jinja2 import exceptions
 import os
 
-files = ['about.html', 'index.html', 'python-website.html', 'projects.html', 'events.html', 'discord-bot.html']
+files = ['admin.html', 'about.html', 'index.html', 'projects.html', 'events.html']
 
 def build(files: list):
     env = Environment(
