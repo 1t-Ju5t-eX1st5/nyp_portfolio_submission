@@ -2,6 +2,8 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 from jinja2 import exceptions
 import os
 
+files = ['about.html', 'index.html', 'python-website.html', 'projects.html', 'events.html', 'discord-bot.html']
+
 def build(files: list):
     env = Environment(
         loader=PackageLoader("build"),
@@ -22,7 +24,5 @@ def build(files: list):
     else:
         print(f"The following files were not found/were not able to be rendered: {err_files}")
 
-
 if __name__ == "__main__":
-    files = ['about.html', 'index.html', 'python-website.html', 'projects.html', 'events.html', 'discord-bot.html']
     build(files)
