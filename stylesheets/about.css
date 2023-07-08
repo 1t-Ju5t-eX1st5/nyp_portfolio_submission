@@ -26,4 +26,13 @@
 .about-section .news-article {
   font-size: 25px;
   font-weight: 250;
+}
+
+.home-img {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }/*# sourceMappingURL=about.css.map */
