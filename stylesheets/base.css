@@ -128,4 +128,6 @@ a:hover {
   color: #000;
 }
 
-/* Carousel captions CSS *//*# sourceMappingURL=base.css.map */
+.main-wrapper {
+  height: auto;
+}/*# sourceMappingURL=base.css.map */
