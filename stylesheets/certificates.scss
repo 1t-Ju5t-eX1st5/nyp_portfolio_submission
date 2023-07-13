@@ -9,8 +9,15 @@
     position: relative;
     margin: 3rem 0;
     background: #2c2b2b;
-    height: 14.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 14.75rem; - Removed, not advised to use predefined height due to overflow */
   }
+
+  /*
+
+  Some long-outdated CSS, keeping them in for documentation sake
+
   .tabs::before,
   .tabs::after {
     content: "";
@@ -22,6 +29,8 @@
   .tab {
     float: left;
   }
+*/
+
   .tab-switch {
     display: none;
   }
@@ -44,16 +53,25 @@
   }
   .tab-content {
     height: auto;
+    /*
+    Not advised to use position absolute due to conflicting issues with DOM (see docs/certificates.css for more details)
+
     position: absolute;
     z-index: 1;
     top: 2.75em;
     left: 0;
-    padding: 1.618rem;
+    */
+    /* padding: 1.618rem; - Removed due to {}*/
+
     background: #2c2b2b;
     color: #fff;
     border-bottom: 0.25rem solid #2c2b2b;
     opacity: 0;
     transition: all 0.35s;
+    height: 0;
+    overflow: hidden;
+    order: 1;
+    width: 100%;
   }
   .tab-switch:checked + .tab-label {
     background: #243d5a;
@@ -68,4 +86,6 @@
     z-index: 2;
     opacity: 1;
     transition: all 0.35s;
+    height: auto;
+    padding: 1.618rem;
   }

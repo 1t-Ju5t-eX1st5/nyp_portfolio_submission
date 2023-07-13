@@ -1,0 +1,192 @@
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+  background: #2c2b2b;
+
+  /*
+  Don't explicitly set a height like that.
+  This is because you have content that could be of varying heights...
+  So if one of them overflow, it could go beyond the DOM.
+  Which can also cause your footer issue.
+  ----
+  height: 14.75rem;
+  */
+
+  /* Added Styles */
+
+  /*
+  Modern CSS uses Flexbox instead of things like float and clear.
+  So I'm using it instead, it also makes things more easy to understand,
+  instead of float, and clear everywhere.
+  */
+  display: flex;
+
+  /*
+  I'm using this property to wrap the flex items.
+  In this case it is your tabs and tabs' content
+  You might think why do I need this??
+  Well, I'll address it later on in your css.
+  */
+  flex-wrap: wrap;
+}
+
+/*
+
+These css properties belongs to the legacy era of CSS
+if you find yourself needing to use them, something is clearly wrong
+some of them feels unnecessary
+
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+
+.tabs::after {
+  clear: both;
+}
+
+.tab {
+  float: left;
+}
+
+*/
+
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: #213245;
+  border-right: 0.125rem solid #243d5a;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+}
+
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+
+.tab-content {
+  height: auto;
+  /* 
+  it's a bad idea to use position absolute!
+  it puts it out of the natural flow of the DOM,
+  so stuff like exceeding the DOM's height and
+  making your footer seem to be not at the bottom can happen
+  ----
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0; */ 
+  /* padding: 1.618rem; im moving this below, you'll see why at the end */
+  background: #2c2b2b;
+  color: #fff;
+  border-bottom: 0.25rem solid #2c2b2b;
+  opacity: 0;
+  transition: all 0.35s;
+
+  /* Added Styles - Notice how i use order: 1 to force it down, instead of position absolute */
+
+  /*
+  Initially don't show at all
+  I cannot use display: none; since that breaks your transitions.
+  I also cannot use visibility: hidden;
+  because it only hides it, it doesnt remove from the DOM so it still extends beyond the footer.
+
+  So... why not? just set the height to 0. Problem solved right?
+  */
+  height: 0; 
+
+  /*
+  Nope! There are still issues!
+  That's because with this scuffed way of hiding,
+  your other elements in .tab-content still positions themselves as usual
+  well.. normally something like this shouldn't happen, but your styles made them act like that.
+
+  So... instead of modifying your other code,
+  let's fix this scuffed way of hiding with more scuffing!
+  Enter `overflow: hidden;`
+  This forces your elements in .tab-content to be hidden when they overflow the parent
+  which is always height 0. So they are now "out" of the DOM properly now. Yay!
+  */
+  overflow: hidden;
+
+  /*
+  And now... let's address the magic that you might be wondering about.
+  "How the hell did you put the .tab-content below all the tabs,
+  when in HTML I put them right beside the `label` elements???"
+
+  Well, that's thanks to this css property called `order`.
+  This order property, well, sets the order of items inside a flexbox. (works for grid too!)
+  By default everything is ordered from how you positioned the elements in the DOM.
+  But... this order property allows you to set some form of "priority"
+
+  Every element starts with order: 0; by default.
+  So basically, every element is ordered by their order first, THEN their order in in the HTML
+  Very convenient for our use case here!
+  */
+  order: 1;
+
+  /*
+  Ah yes, so remember the `flex-wrap: wrap;` from earlier on?
+  Here it comes into play.
+
+  Basically, usually in flexbox by default, the flex items won't wrap.
+  So everything will either be in a column or row.
+  Which is why I made it wrap, so when something exceeds the width,
+  I push it onto the next row, instead of squeezing it in the same row.
+
+  That's why I'm now setting the width to 100%.
+  This means that the tab-content will always take one full row.
+  Hence, it will ALWAYS be pushed down below the tabs.
+  */
+  width: 100%;
+}
+
+.tab-switch:checked + .tab-label {
+  background: #243d5a;
+  color: #fff;
+  border-bottom: 0;
+  border-right: 0.125rem solid #243d5a;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+
+  /* Added Styles */
+  
+  /*
+  Here I'm finally letting the height be normal when it displays.
+  So it doesn't try to hide with height: 0.
+  */
+  height: auto;
+
+  /*
+  Ah yes, so I moved your padding down here.
+  This is because when the height is 0,
+  your padding still applies, and creates some weird whitespace.
+  So I'll only let padding be set, when the tab-content is actually shown.
+  */
+  padding: 1.618rem; /* your original padding */
+}/*# sourceMappingURL=certificates.css.map */
