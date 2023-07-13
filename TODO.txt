@@ -11,3 +11,13 @@ ABOUT ME
 - "My Story" - dun use the word "stumbled across the ..." not professional, just go with more neutral terms like "I participated in..." - IMPLEMENTED
 - "My Story" - no need ot mention "did not win anything", just say smth like "the competition gave me a whole new experience of cybersecurity...." can use chatGPT for help to make your english sounds good - IMPLEMENTED
 - "My Accomplishements and Project" - I dont think there's a need for this because you already have another subpage for events you participated in. I suggest you can change this title to "My path to Development and Cybersecurity", then you continue your story with mini sub-headers like "first coding project", "first CTF achievement", "first etc.." then 1 paragraph for each of these sub-header - IMPLEMENTED
+
+
+FOOTER
+- Add the following pages: 
+    - About this website: another brief summary about the website, languages/tools used, key contributors to the site
+    - Key contributors:
+        - Rey Seow
+        - Osirisz Deathstar (Discord)
+        - NJ (Discord)
+    - Terms of Use
